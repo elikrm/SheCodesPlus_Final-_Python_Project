@@ -94,9 +94,10 @@ df = {
 "Minimum real feel shade temperatures": Real_Feel_Temperature_Shade_array,
 "Days": Date_in_line_array
 }
-fig = px.line(df,
+fig = px.bar(df,
  y=["Minimum Temperature","Minimum real feel temperatures","Minimum real feel shade temperatures"],
   x="Days",
   title= "Forcast Graph including minimum, minimum real feel, minimum real feel shade temperatures",
-  labels ={"variable": "Temperature", "value": "Temperature in degrees celcius"})
+  labels ={"variable": "Temperature", "value": "Temperature in degrees celcius"},
+  barmode="group")
 fig.write_html("MyGraph2.html")
