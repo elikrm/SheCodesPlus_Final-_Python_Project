@@ -1,5 +1,5 @@
 import unittest
-from part1 import process_weather, convert_f_to_c, calculate_mean
+from part1 import format_temperature, process_weather, convert_f_to_c, calculate_mean
 
 
 class Part1Tests(unittest.TestCase):
